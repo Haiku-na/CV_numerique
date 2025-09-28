@@ -1,0 +1,430 @@
+@font-face {
+    font-family: "Alien";
+    src:
+        local("Alien"),
+        url("./alien_encounters/Alien-Encounters-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Alien-italic";
+    src:
+        local("Alien"),
+        url("./alien_encounters/Alien-Encounters-Bold-Italic.ttf") format("opentype");
+}
+
+body,
+button {
+    background-image: url(./images/fond_etoile.png );
+    font-family: 'Alien', sans-serif;
+    color: rgb(255, 255, 255);
+    ;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #e3cbcb;
+}
+
+a:hover {
+    border-radius: 20px;
+    background: #ffffff3c;
+    font-weight: bold;
+}
+
+
+h2 {
+    color: #e3cbcb
+}
+
+footer {
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+footer p {
+    background: #00000063;
+}
+
+
+.sous-titre,
+.grand-titre {
+    font-family: 'Alien-italic', sans-serif;
+    margin: 0;
+    z-index: 1;
+}
+
+.grand-titre {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    top: 1.2%;
+}
+
+.titre {
+    background: rgba(127, 0, 212, 0.493);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.descritpion {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f700ff15;
+    border-radius: 30px;
+    margin: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    top: 10px;
+    background-image: url(./images/galaxy.png);
+    background-size: cover;
+    border-radius: 30px;
+    position: fixed;
+    padding: 20px;
+    z-index: 2;
+}
+
+.navbar .icon {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .identity {
+    display: flex;
+    width: 100%;
+}
+
+.nom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea,
+button {
+    margin: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e3cbcb5e;
+}
+
+button {
+    color: #6b3562;
+}
+
+button:hover {
+    background-color: #e3cbcb5e;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background: #e3cbcb;
+}
+
+
+.image_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skateur {
+    width: 10%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+.alien {
+    width: 40%;
+    bottom: 0%;
+}
+
+.vaisseau {
+    position: relative;
+    width: 70%;
+
+}
+
+.fond_light {
+    position: absolute;
+    top: 5%;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 500px);
+    opacity: 0.5;
+    background: linear-gradient(to bottom, rgb(179, 255, 0), rgb(225, 255, 0), rgba(255, 255, 0, 0));
+    z-index: -1;
+    clip-path: polygon(45% 0, 55% 0, 100% 100%, 0 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    position: relative;
+}
+
+.list1 {
+    padding: 0;
+}
+
+.elt-list1 {
+    list-style: none;
+    list-style-type: none;
+}
+
+li {
+    padding: 15px;
+}
+
+.container_skills {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 0;
+}
+
+span,
+progress {
+    width: 100%;
+}
+
+progress {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e3cbcb41;
+    opacity: 0.75;
+}
+
+progress::-moz-progress-bar {
+    background-color: #e3cbcb41;
+    opacity: 0.75;
+}
+
+.vachette {
+    position: absolute;
+    animation: tournervache 10s linear infinite;
+}
+
+
+
+.vachen1 {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 30%;
+}
+
+.vachen2 {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 30%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+.grass {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    position: absolute;
+    left: 0;
+    height: auto;
+    bottom: 0;
+    z-index: -1;
+}
+
+@keyframes tournervache {
+    0% {
+        top: 93%;
+        left: -100%;
+        transform: scale(1.5);
+    }
+
+    25% {
+        top: 93%;
+        transform: translateX(-50%) scale(1.5) rotate(0deg);
+        left: 50%;
+    }
+
+    100% {
+        top: 5%;
+        transform: translateX(-50%) scale(0.5) rotate(1080deg);
+        left: 50%;
+    }
+}
+
+@media screen and (min-width:1029px) {
+    .fond_light {
+        top: 310px;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .grand-titre {
+        top: 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar {
+        background-image: none;
+    }
+
+    form .identity {
+        flex-direction: column;
+    }
+
+    .container_skills {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .skills{
+        padding: 0;
+        width: 90%;
+    }
+
+    .vachen1,
+    .vachen2 {
+        display: none;
+    }
+
+    .vaisseau {
+        top: 60px;
+        max-width: 230px;
+    }
+
+    .fond_light {
+        top: 180px;
+    }
+
+    @keyframes tournervache {
+        0% {
+            top: 93%;
+            left: -100%;
+            transform: scale(1);
+        }
+
+        25% {
+            top: 93%;
+            transform: translateX(-50%) scale(1) rotate(0deg);
+            left: 50%;
+        }
+
+        100% {
+            top: 1%;
+            transform: translateX(-50%) scale(0.2) rotate(1080deg);
+            left: 50%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .navbar.responsive {
+        position: fixed;
+        background-image: url(./images/galaxy.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar.responsive .icon {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
